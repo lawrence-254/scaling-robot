@@ -1,7 +1,12 @@
-
+import style from 'styled-components'
+const Button = styled.button`
+`
 const DownloadButton = () => {
   return (
-    <button>
+    <button onClick={() => {
+        //confeti anime
+        //download
+    }}>
         Download
     </button>
   )
