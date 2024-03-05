@@ -1,12 +1,10 @@
 const express = require('express');
 
 const app = express();
-app.use(express.static('static'));
+const fileSeverMiddleWare = express.static('public');
+app.use('/', fileSeverMiddleWare)
 
-app.get('/', (req, res) => {
-    console.log('hello world');
-})
 
 app.listen(3000, () => {
-    console.log('app started on port 3000');
+    console.log('app started on localhost port 3000');
 });
